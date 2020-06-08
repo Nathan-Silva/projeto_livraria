@@ -1,0 +1,90 @@
+@model projeto_livraria.Models.Livro;
+
+<div class="container-fluid pt-4 pb-3">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card border-0">
+                <div class="text-center view overlay hm-white-slight">
+                    <img src="~/images/imagens-livros/harry-potter1.webp" alt="..."
+                        class="img-thumbnail">
+                    <a href="#">
+                        <div class="mask waves-effect waves-light"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card-block">
+                <!--Title-->
+                <h2 class="titulo-livro">@Model.Titulo</h2>
+                <!--Text-->
+                <p class="card-text"><b>Autor:</b> @Model.Autor</p>
+                <p class="card-text editora-livro"><b> Editora:</b> @Model.Editora</p>
+                <p class="btn btn-group align-content-lg-end " >
+                    <a asp-controller="Livros" asp-action="List" class="btn btn-outline-info">Voltar para Livros</a>
+                    <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra" asp-action="AdicionarItemNoCarrinhoCompra" asp-route-IdLivro="@Model.IdLivro">
+                        Adicionar ao carrinho
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="accordion container-descricao" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0 text-body">
+        <button class="btn btn-primary btn-block text-left botao-descricao" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Descrição
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show mx-auto livro-descricao" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body" >
+            @Model.Descricao      
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0 text-body">
+        <button class="btn btn-primary btn-block text-left collapsed botao-descricao" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Características
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+          <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Ano</th>
+                <th scope="col">Páginas</th>
+                <th scope="col">Acabamento</th>
+                <th scope="col">Idioma</th>
+                <th scope="col">Pais</th>
+                <th scope="col">Altura</th>
+                <th scope="col">Largura</th>
+                <th scope="col">Peso</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>@Model.Ano</td>
+                <td>@Model.Numero_de_Paginas</td>
+                <td>@Model.Acabamento</td>
+                <td>@Model.Idioma</td>
+                <td>@Model.Pais</td>
+                <td>@Model.Altura</td>
+                <td>@Model.Largura</td>
+                <td>@Model.Peso</td>  
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

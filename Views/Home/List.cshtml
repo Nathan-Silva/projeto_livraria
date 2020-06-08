@@ -1,0 +1,13 @@
+@model LivroListViewModel
+@{
+    ViewData ["Title"] = "Livros";
+}
+
+<section class="container-fluid bg-light" id="livros">
+            <div class="row justify-content-center">
+                @foreach (var livro in Model.Livros)
+                    {
+                        @Html.Partial("LivroResumo", livro)                      
+                    }
+            </div>
+        </section>

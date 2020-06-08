@@ -1,0 +1,23 @@
+@model projeto_livraria.Models.Livro;
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div>            
+    <article class="card p-2 m-3 width-cards col-3 col-md-3 border-primary rounded">                
+        <img src="~/images/imagens-livros/harry-potter1.webp" class="card-img-top posicao-imagem-card"
+            alt="...">
+        <div class="card-body">
+        <h5>
+            <a asp-asp-controller="Titulo" asp-action="Details" asp-route-Idlivro="@Model.IdLivro">"@Model.Titulo"</a>
+        </h5>
+        <p class="card-text">Preço : @Model.Preco.ToString("C")</p>
+        <div class="AddToCart Text-right">
+        </div>
+            <p class="button ">
+                <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra" asp-action="AdicionarItemNoCarrinhoCompra" asp-route-IdLivro="@Model.IdLivro">
+                    Incluir no Carrinho
+                </a>
+            </p>        
+        </div>
+    </article>                                           
+</div>        
