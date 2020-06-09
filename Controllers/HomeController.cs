@@ -31,7 +31,7 @@ namespace AppWeb.Controllers
         //     return View(livros);
         
             var LivrosListViewModel = new LivroListViewModel(); 
-            LivrosListViewModel.Livros = _context.Livro;
+            LivrosListViewModel.Livro = _context.Livro;
             return View(LivrosListViewModel);
         }
 

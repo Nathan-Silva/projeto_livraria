@@ -29,6 +29,11 @@
                         <li class="nav-item"><a class="nav-item nav-link" asp-controller="Home" asp-action="Login">Login</a></li>
                         <li class=" icon-carrinho">@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
                     </ul>
+                    <form class="navbar-form navbar-right" asp-controller="Livros" asp-action="Busca" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Procurar Livro" name="buscaString" value="@ViewData["buscaString"]">
+                        </div>
+                    </form>
                 </div>
             </div>
         </nav>

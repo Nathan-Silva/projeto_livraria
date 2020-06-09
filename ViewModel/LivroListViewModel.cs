@@ -5,6 +5,6 @@ namespace projeto_livraria.ViewModel
 {
     public class LivroListViewModel
     {
-        public IEnumerable<Livro> Livros {get; set; }
+        public IEnumerable<Livro> Livro {get; set; }
     }
 }
