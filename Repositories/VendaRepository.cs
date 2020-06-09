@@ -23,14 +23,14 @@ namespace projeto_livraria.Repositories
 
             var CarrinhoCompraItens = _CarrinhoCompra.Carrinho_Item;
 
-            foreach(var Carrinho_Item in CarrinhoCompraItens)
+            foreach(var CarrinhoItem in CarrinhoCompraItens)
             {
                 var VendaDetalhe = new Venda_Detalhe()
                 {
-                    Quantidade = Carrinho_Item.Quantidade,
-                    IdLivro = Carrinho_Item.Livro.IdLivro,
+                    Quantidade = CarrinhoItem.Quantidade,
+                    IdLivro = CarrinhoItem.Livro.IdLivro,
                     IdVenda = venda.IdVenda,
-                    preco_uni = Carrinho_Item.Livro.Preco,
+                    preco_uni = CarrinhoItem.Livro.Preco,
                 };
 
                 _livrariaContext.Venda_Detalhe.Add(VendaDetalhe);

@@ -15,6 +15,7 @@ namespace projeto_livraria.Controllers
             _carrinhoCompra = carrinhoCompra;
         }
         [Route("Venda/Formulario")]
+        [HttpGet]
         public IActionResult Formulario()
         {
             return View();
@@ -38,10 +39,11 @@ namespace projeto_livraria.Controllers
             }
             return View(venda);
         }
+        [Route("Venda/FormularioCompleto")]
         public IActionResult FormularioCompleto()
         {
             ViewBag.FormularioCompletoMensagem = "Obrigado pela sua compra";
-            return View(ViewBag.FormularioCompletoMensagem);
+            return View();
         }
     }
 }
