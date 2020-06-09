@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace projeto_livraria.Models
 {
@@ -12,6 +13,7 @@ namespace projeto_livraria.Models
         public DateTime Data_Venda { get; set; }
         public System.Decimal Venda_Total { get; set; }
         // public List<Livro> IdLivro { get; set; }
+        [ForeignKey("Id_Cliente")]
         public Cliente IdCliente { get; set; }
     }
 }

@@ -28,9 +28,9 @@ namespace projeto_livraria.Repositories
                 var VendaDetalhe = new Venda_Detalhe()
                 {
                     Quantidade = CarrinhoItem.Quantidade,
-                    IdLivro = CarrinhoItem.Livro.IdLivro,
-                    IdVenda = venda.IdVenda,
-                    preco_uni = CarrinhoItem.Livro.Preco,
+                    IdLivro = CarrinhoItem.Livro,
+                    IdVenda = venda,
+                    Preco_uni = CarrinhoItem.Livro.Preco,
                 };
 
                 _livrariaContext.Venda_Detalhe.Add(VendaDetalhe);
