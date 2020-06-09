@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using projeto_livraria.Data;
 using Microsoft.AspNetCore.Http;
 using projeto_livraria.Models;
+using Repositories;
+using projeto_livraria.Repositories;
 
 namespace AppWeb
 {
@@ -38,6 +40,10 @@ namespace AppWeb
             // adicionar um novo objeto para cada usuario
             services.AddScoped(cp => CarrinhoCompra.GetCarrinho(cp));
 
+            services.AddTransient<ILivrosRepository, LivroRepository>();
+            services.AddTransient<IVendaRepository, VendaRepository>();
+
+            
             services.AddMemoryCache();
             services.AddSession();
         }

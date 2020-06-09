@@ -9,7 +9,7 @@ namespace projeto_livraria.Models
         public string Nome { get; private set;}
         public long CPF { get; private set;}
         public Telefone IdTelefone { get; set;}
-        public Endereco IdEnredeco { get; set;}
+        public Endereco IdEndereco { get; set;}
         
     }
 }

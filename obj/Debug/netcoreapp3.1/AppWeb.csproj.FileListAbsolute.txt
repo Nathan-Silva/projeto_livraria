@@ -274,3 +274,5 @@ C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\AppWeb.dll
 C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\AppWeb.pdb
 C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\AppWeb.genruntimeconfig.cache
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Venda\Formulario.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Venda\FormularioCompleto.cshtml.g.cs

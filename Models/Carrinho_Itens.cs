@@ -11,7 +11,6 @@ namespace projeto_livraria.Models
         [ForeignKey("IdLivro")]
         public Livro Livro {get; set; }
         public int Quantidade {get; set; }
-        [StringLength(200)]
         public string Carrinho_CompraId { get; set; }
     }
 }
