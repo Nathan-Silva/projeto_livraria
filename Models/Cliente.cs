@@ -8,7 +8,7 @@ namespace projeto_livraria.Models
         [Key]
         public int IdCliente {get; private set;}
         public string Nome { get; set;}
-        public long CPF { get; private set;}
+        public string CPF { get; set;}
         [ForeignKey("Id_Telefone")]
         public Telefone Telefone { get; set;}
         [ForeignKey("Id_Endereco")]

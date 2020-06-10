@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Mvc;
 using projeto_livraria.Models;
 using projeto_livraria.Repositories;
@@ -30,7 +31,10 @@ namespace projeto_livraria.Controllers
             if(_carrinhoCompra.Carrinho_Item.Count == 0)
             {
                 ModelState.AddModelError("","Seu Carrinho esta vazio");
+                return View(venda);
+
             }
+            
             if(ModelState.IsValid)
             {
                 _vendaRepository.CriarVenda(venda);

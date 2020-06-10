@@ -7,6 +7,7 @@ namespace projeto_livraria.Models
 {
     public class Venda
     {   
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int IdVenda { get; set; } 
         public List<Venda_Detalhe> Venda_Itens {get; set; }
