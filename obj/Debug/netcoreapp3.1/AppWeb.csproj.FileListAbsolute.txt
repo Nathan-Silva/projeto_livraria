@@ -129,9 +129,6 @@ C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relati
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
@@ -276,3 +273,11 @@ C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\AppWeb.pdb
 C:\Users\italo\Projetos\biblioteca-faculdade\obj\Debug\netcoreapp3.1\AppWeb.genruntimeconfig.cache
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Venda\Formulario.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Venda\FormularioCompleto.cshtml.g.cs
+C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Login.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Logout.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Register.cshtml.g.cs

@@ -1,4 +1,3 @@
-using projeto_livraria.Models;
 
 namespace projeto_livraria.Data
 {

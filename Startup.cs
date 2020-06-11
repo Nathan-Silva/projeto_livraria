@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http;
 using projeto_livraria.Models;
 using Repositories;
 using projeto_livraria.Repositories;
+using Microsoft.AspNetCore.Identity;
 
 namespace AppWeb
 {
@@ -36,6 +37,10 @@ namespace AppWeb
             
             services.AddControllersWithViews();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddIdentity<IdentityUser,  IdentityRole>()
+                .AddEntityFrameworkStores<LivrariaContext>()
+                .AddDefaultTokenProviders();
 
             // adicionar um novo objeto para cada usuario
             services.AddScoped(cp => CarrinhoCompra.GetCarrinho(cp));
@@ -64,6 +69,7 @@ namespace AppWeb
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSession();
+            app.UseAuthentication();
 
             app.UseRouting();
 

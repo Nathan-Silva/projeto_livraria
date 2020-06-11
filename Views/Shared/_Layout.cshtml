@@ -26,9 +26,9 @@
                         <li class="nav-item"><a class="nav-item nav-link" asp-controller="Home" asp-action="Quem somos">Quem somos</a></li>
                         <li><a class="nav-item nav-link" href="#" data-toggle="modal"
                                 data-target="#modal-fale-conosco">Fale conosco</a></li>
-                        <li class="nav-item"><a class="nav-item nav-link" asp-controller="Home" asp-action="Login">Login</a></li>
                         <li class=" icon-carrinho">@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
                     </ul>
+                    @await Html.PartialAsync("_LoginPartial")
                     <form class="navbar-form navbar-right" asp-controller="Livros" asp-action="Busca" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Procurar Livro" name="buscaString" value="@ViewData["buscaString"]">

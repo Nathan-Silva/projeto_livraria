@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using projeto_livraria.Models;
 
 namespace projeto_livraria.Data
 {
-    public class LivrariaContext : DbContext
+    public class LivrariaContext : IdentityDbContext<IdentityUser>
     {
         public LivrariaContext(DbContextOptions<LivrariaContext> options) : base(options)
         {
