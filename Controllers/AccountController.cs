@@ -1,11 +1,13 @@
 
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using projeto_livraria.ViewModel;
 
 namespace AppWeb.AccountController
 {
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -27,6 +29,7 @@ namespace AppWeb.AccountController
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
             if (!ModelState.IsValid)
@@ -47,7 +50,7 @@ namespace AppWeb.AccountController
                 }
             }
 
-            ModelState.AddModelError("", "Usuário/Senha inválidos ou não localizados!!");
+            ModelState.AddModelError("", "Usuário ou Senha inválidos!");
             return View(loginVM);
         }
 

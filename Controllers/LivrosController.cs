@@ -10,9 +10,6 @@ namespace projeto_livraria.Controllers
 {
     public class LivrosController : Controller 
     {
-        private const string V = "";
-        private const string V1 = "V";
-
         // private readonly ILogger<LivrosController> _logger;
         private readonly LivrariaContext _context;
         public LivrosController(LivrariaContext context)

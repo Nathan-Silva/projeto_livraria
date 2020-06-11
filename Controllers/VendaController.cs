@@ -1,4 +1,5 @@
 using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using projeto_livraria.Models;
 using projeto_livraria.Repositories;
@@ -6,25 +7,29 @@ using projeto_livraria.Repositories;
 namespace projeto_livraria.Controllers
 {
     public class VendaController : Controller
-    {
-        private readonly IVendaRepository _vendaRepository;
-        private readonly CarrinhoCompra _carrinhoCompra;
+    {                
+            private readonly IVendaRepository _vendaRepository;
+            private readonly CarrinhoCompra _carrinhoCompra;
 
-        public VendaController(IVendaRepository vendaRepository, CarrinhoCompra carrinhoCompra)
-        {
-            _vendaRepository = vendaRepository;
-            _carrinhoCompra = carrinhoCompra;
-        }
-        [Route("Venda/Formulario")]
-        [HttpGet]
-        public IActionResult Formulario()
-        {
-            return View();
-        }
+            public VendaController(IVendaRepository vendaRepository, CarrinhoCompra carrinhoCompra)
+            {
+                _vendaRepository = vendaRepository;
+                _carrinhoCompra = carrinhoCompra;
+            }
 
-        [HttpPost]
-        public IActionResult Formulario(Venda venda)
-        {
+            [Route("Venda/Formulario")]
+            [HttpGet]
+            [Authorize]
+            public IActionResult Formulario()
+            {
+                return View();
+            }
+
+            [HttpPost]
+            [Authorize]
+            public IActionResult Formulario(Venda venda)
+            {
+            
             var Itens = _carrinhoCompra.GetCarrinho_Item();
             _carrinhoCompra.Carrinho_Item = Itens;
 
@@ -42,12 +47,13 @@ namespace projeto_livraria.Controllers
                 return RedirectToAction("FormularioCompleto");
             }
             return View(venda);
-        }
-        [Route("Venda/FormularioCompleto")]
-        public IActionResult FormularioCompleto()
-        {
-            ViewBag.FormularioCompletoMensagem = "Obrigado pela sua compra";
-            return View();
-        }
+            }
+
+            [Route("Venda/FormularioCompleto")]
+            public IActionResult FormularioCompleto()
+            {
+                ViewBag.FormularioCompletoMensagem = "Obrigado pela sua compra";
+                return View();
+            }
     }
 }

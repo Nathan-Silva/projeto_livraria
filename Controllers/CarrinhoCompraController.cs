@@ -1,4 +1,5 @@
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using projeto_livraria.Data;
 using projeto_livraria.Models;
@@ -32,6 +33,8 @@ namespace AppWeb.Controllers
 
             return View(CarrinhoCompraViewModel);
         }
+
+        [Authorize]
         [Route("CarrinhoCompra/Index")]
         public RedirectToActionResult AdicionarItemNoCarrinhoCompra(int IdLivro)
         {
@@ -43,6 +46,8 @@ namespace AppWeb.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        [Authorize]
         public RedirectToActionResult RemoverItemNoCarrinhoCompra(int IdLivro)
         {
             var livroSelecionado = _LivrariaContext.Livro.FirstOrDefault(p => p.IdLivro == IdLivro);
