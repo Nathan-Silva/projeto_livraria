@@ -278,6 +278,6 @@ C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.A
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Login.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Logout.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account.cshtml\Register.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
