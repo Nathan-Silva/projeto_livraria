@@ -281,3 +281,6 @@ C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.csh
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Admin\Index.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_VirewImports.cshtml.g.cs

@@ -7,7 +7,6 @@ using projeto_livraria.ViewModel;
 
 namespace AppWeb.AccountController
 {
-    [Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -29,7 +28,6 @@ namespace AppWeb.AccountController
         }
 
         [HttpPost]
-        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
             if (!ModelState.IsValid)

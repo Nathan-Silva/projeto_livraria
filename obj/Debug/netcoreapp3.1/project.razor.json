@@ -20546,6 +20546,11 @@
   "RootNamespace": "AppWeb",
   "Documents": [
     {
+      "FilePath": "c:\\projeto_livraria\\Area\\Admin\\Views\\Admin\\Index.cshtml",
+      "TargetPath": "Area\\Admin\\Views\\Admin\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\projeto_livraria\\Views\\Livros\\List.cshtml",
       "TargetPath": "Views\\Livros\\List.cshtml",
       "FileKind": "mvc"
@@ -20616,6 +20621,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\projeto_livraria\\Area\\Admin\\Views\\_VirewImports.cshtml",
+      "TargetPath": "Area\\Admin\\Views\\_VirewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\projeto_livraria\\Views\\Account\\Register.cshtml",
       "TargetPath": "Views\\Account\\Register.cshtml",
       "FileKind": "mvc"
@@ -20628,6 +20638,11 @@
     {
       "FilePath": "c:\\projeto_livraria\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Area\\Admin\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Area\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
