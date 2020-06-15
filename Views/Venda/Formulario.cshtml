@@ -21,6 +21,13 @@
                 <span asp-validation-for="@Model.IdCliente.CPF" class="text-danger"></span>
             </div>
         </div>
+        <div class="form-group">
+            <label asp-for="@Model.IdCliente.Telefone" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.IdCliente.Telefone" class="form-control"/>
+                <span asp-validation-for="@Model.IdCliente.Telefone" class="text-danger"></span>
+            </div>
+        </div>
 
         <div class="form-group">
             <label asp-for="@Model.IdCliente.Endereco.Rua" class="col-md-2 control-label"></label>

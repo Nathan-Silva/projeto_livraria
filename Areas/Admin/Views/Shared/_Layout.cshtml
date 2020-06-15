@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca</title>
+    <title>@ViewData["Title"] - Biblioteca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+</head>
+<body>      
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand font-titulo tamanho-titulo" asp-area="" asp-controller="Home" asp-action="Index">Biblioteca</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        </li> <a class="nav-item nav-link" asp-area="Admin" asp-controller="AdminLivros" asp-action="Index">Livros</a></li>
+                        <li><a class="nav-item nav-link" href="#" data-toggle="modal"
+                                data-target="#modal-fale-conosco">Fale conosco</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" asp-controller="Livros" asp-action="Busca" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Procurar Livro" name="buscaString" value="@ViewData["buscaString"]">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+        
+    <div class="container-fluid p-0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal-fale-conosco" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fale conosco</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contato1: 0000-0000</p>
+                    <p>Contato2: 0000-0000</p>
+                    <p>Contato3: 0000-0000</p>
+                    <p>E-mail: faleconosco@biblioteca.com.br</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <footer class="pt-4 my-md-5 pt-md-5 border-top mr-sm-0 layout-foolter">
+ 
+        <div class="row">
+          <div class="ml-sm-5 ml-5 col-sm-2">
+            <img class="mb-2" src="~/images/imagens-foolter/icon-livro.png" alt="" width="50" height="50">
+            <small class="d-block mb-3 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2020</font></font></small>
+          </div>
+          <div class="col-6 col-md">
+            <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mais informações</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recurso aleatório</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Característica da equipe</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Coisas para desenvolvedores</font></font></a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sobre</font></font></h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Equipe</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Localizações</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Privacidade</font></font></a></li>
+              <li><a class="text-muted" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Termos e Condições</font></font></a></li>
+            </ul>
+          </div>
+          <div class="mr-5 ml-sm-5">
+            <h5 class="ml-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Formas de Pagamento</font></font></h5>
+            <ul class="list-unstyled text-small">
+              <img src="~/images/imagens-foolter/pagamento.png" class="mx-auto d-block w-100" alt="...">
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <!--<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

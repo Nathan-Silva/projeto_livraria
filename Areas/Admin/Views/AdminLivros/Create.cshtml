@@ -1,0 +1,49 @@
+@model projeto_livraria.Models.Livro;
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h3>Novo Livro</h3>
+<hr />
+<div class="row">
+    <div class="col-md-10">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.Titulo" class="control-label"></label>
+                <input asp-for="@Model.Titulo" class="form-control" />
+                <span asp-validation-for="@Model.Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Autor" class="control-label"></label>
+                <textarea asp-for="@Model.Autor" class="form-control"></textarea>
+                <span asp-validation-for="@Model.Autor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Editora" class="control-label"></label>
+                <textarea asp-for="@Model.Editora" class="form-control"></textarea>
+                <span asp-validation-for="@Model.Editora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Descricao" class="control-label"></label>
+                <input asp-for="@Model.Descricao" class="form-control" />
+                <span asp-validation-for="@Model.Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Ano" class="control-label"></label>
+                <input asp-for="@Model.Ano" class="form-control" />
+                <span asp-validation-for="@Model.Ano" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Numero_de_Paginas" class="control-label"></label>
+                <input asp-for="@Model.Numero_de_Paginas" class="form-control" />
+                <span asp-validation-for="@Model.Numero_de_Paginas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar Livro" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-outline-info">Retornar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
