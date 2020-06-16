@@ -324,3 +324,5 @@ C:\projeto_livraria\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.res
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Details.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Edith.cshtml.g.cs

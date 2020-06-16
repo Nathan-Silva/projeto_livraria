@@ -20595,6 +20595,11 @@
   "RootNamespace": "AppWeb",
   "Documents": [
     {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Details.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\projeto_livraria\\Views\\Livros\\List.cshtml",
       "TargetPath": "Views\\Livros\\List.cshtml",
       "FileKind": "mvc"
@@ -20637,6 +20642,11 @@
     {
       "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
       "FileKind": "mvc"
     },
     {

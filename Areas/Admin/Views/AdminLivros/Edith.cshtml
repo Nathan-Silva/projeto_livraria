@@ -1,0 +1,29 @@
+@model projeto_livraria.Models.Livro;
+@{
+    ViewData["Title"] = "Edit";
+}
+<h3>Editar o livro</h3>
+<hr />
+<form asp-action="Edit" role="form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="IdLivro" />
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descrição" class="control-label"></label>
+        <textarea asp-for="Descrição" class="form-control"></textarea>
+        <span asp-validation-for="Descrição" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Preco" class="control-label"></label>
+        <input asp-for="Preco" class="form-control" />
+        <span asp-validation-for="Preco" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+        <a asp-action="Index" class="btn btn-outline-info">Retornar</a>
+    </div>
+</form>

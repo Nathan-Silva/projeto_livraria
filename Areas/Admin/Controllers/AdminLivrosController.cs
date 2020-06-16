@@ -11,9 +11,7 @@ using ReflectionIT.Mvc.Paging;
 
 namespace projeto_livraria.Area.Admin.Controllers
 {
-    [Route("Admin/AdminLivros/Index")]
     [Area("Admin")]
-    // [Authorize(Roles = "Admin")]
     public class AdminLivrosController : Controller
     {
         private readonly LivrariaContext _context;
@@ -30,6 +28,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         //     return View(await appDbContext.ToListAsync());
         // }
 
+        [Route("Admin/AdminLivros/Index")]
         public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Titulo")
         {
             var resultado = _context.Livro.AsQueryable();
@@ -47,6 +46,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // GET: Admin/AdminLivros/Details/5
+        [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -77,7 +77,7 @@ namespace projeto_livraria.Area.Admin.Controllers
             }
             return View(livro);
         }
-
+        [HttpPut]
         // GET: Admin/AdminLivros/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -97,7 +97,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         // POST: Admin/AdminLivros/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        [HttpPut]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdLivro,Titulo,Autor,Editora,Descricao,Ano,Numero_de_Paginas,Acabamento,Idioma,Pais,Altura,Largura,Peso,Preco")] Livro livro)
         {
@@ -130,6 +130,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // GET: Admin/AdminLivros/Delete/5
+        [HttpDelete]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -148,7 +149,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // POST: Admin/AdminLivros/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpDelete]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
