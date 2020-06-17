@@ -1,4 +1,76 @@
-@model projeto_livraria.Models.Livro;
+@model projeto_livraria.Models.Livro
+
+<div class="row orderForm">
+
+    <h3 class="text-center"> Insira as informações do novo livro <span class="glyphicon glyphicon-ok"></span></h3>
+
+    <form asp-action="Create" method="Post" class="form-horizontal">
+
+        <div class="form-group">
+            <label asp-for="@Model.Titulo" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Titulo" class="form-control"/>
+                <span asp-validation-for="@Model.Titulo" class="text-danger"></span>
+            </div>    
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="@Model.Autor" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Autor" class="form-control"/>
+                <span asp-validation-for="@Model.Autor" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.Editora" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Editora" class="form-control"/>
+                <span asp-validation-for="@Model.Editora" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Descricao" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Descricao" class="form-control"/>
+                <span asp-validation-for="@Model.Descricao" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Ano" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Ano" class="form-control"/>
+                <span asp-validation-for="@Model.Ano" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Numero_de_Paginas" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Numero_de_Paginas" class="form-control"/>
+                <span asp-validation-for="@Model.Numero_de_Paginas" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="@Model.Acabamento" class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input asp-for="@Model.Acabamento" class="form-control"/>
+                <span asp-validation-for="@Model.Acabamento" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="btn-group col-md-offset-2 col-md-8">
+                <input class="btn btn-success" type="submit" value="Concluir Compra"/>
+            </div>
+        </div>    
+    </form>
+</div>
+
+
+@* @model projeto_livraria.Models.Livro;
 
 @{
     ViewData["Title"] = "Create";
@@ -46,4 +118,4 @@
         </form>
     </div>
 </div>
-
+ *@

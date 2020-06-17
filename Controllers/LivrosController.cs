@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using projeto_livraria.Data;
 using projeto_livraria.Models;
 using projeto_livraria.ViewModel;

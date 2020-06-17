@@ -19,7 +19,7 @@ Total de Livros : @Model.TotalRecordCount
     <vc:pager paging-list="@Model"></vc:pager>
 </div>
 <p>
-    <a asp-action="Create">Adicionar novo Livros</a>
+    <a class="btn btn-outline" asp-action="Create">Adicionar novo Livro</a>
 </p>
 <div class="row">
     <div class="col-md-10">
@@ -27,20 +27,20 @@ Total de Livros : @Model.TotalRecordCount
              <thead>
                 <tr>
                     <th>
-                        @* @Html.SortableHeaderFor(model => model.Nome, "Nome") *@
-                        @*@Html.DisplayNameFor(model => model.Nome)*@
+                        @* @Html.SortableHeaderFor(model => model.Titulo, "Titulo")  *@
+                        @* @Html.DisplayNameFor(model => model.Titulo) *@
                     </th>
                     @* <th>
-                        @Html.DisplayNameFor(model => model.DescricaoCurta)
+                        @Html.DisplayNameFor(model => model.Descricao)
                     </th> *@
                     @* <th>
                         @Html.DisplayNameFor(model => model.Preco)
                     </th> *@
                     @* <th>
-                        @Html.DisplayNameFor(model => model.IsLanchePreferido)
+                        @Html.DisplayNameFor(model => model.Autor)
                     </th> *@
                     @* <th>
-                        @Html.DisplayNameFor(model => model.Categoria)
+                        @Html.DisplayNameFor(model => model.Editora)
                     </th> *@
                     <th></th>
                 </tr>
@@ -53,21 +53,21 @@ Total de Livros : @Model.TotalRecordCount
                             @Html.DisplayFor(modelItem => item.Titulo)
                         </td>
                         <td>
+                            @Html.DisplayFor(modelItem => item.Autor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Editora)
+                        </td>
+                        <td>
                             @Html.DisplayFor(modelItem => item.Descricao)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Preco)
-                        </td>
-                        @* <td>
-                            @Html.DisplayFor(modelItem => item.IsLanchePreferido)
+                            @Html.DisplayFor(modelItem => item.Ano)
                         </td>
                         <td>
-                            @Html.DisplayFor(modelItem => item.Categoria.CategoriaNome)
-                        </td> *@
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.IdLivro">Edita</a> |
-                            <a asp-action="Details" asp-route-id="@item.IdLivro">Detalhes</a> |
-                            <a asp-action="Delete" asp-route-id="@item.IdLivro">Deleta</a>
+                            <a asp-action="Edit" href="/Admin/AdminLivros/Create" asp-route-id="@item.IdLivro">Edita</a> |
+                            <a asp-action="Details" href="/Admin/AdminLivros/Details/5" asp-route-id="@item.IdLivro">Detalhes</a> |
+                            <a asp-action="Delete" href="/Admin/AdminLivros/Delete" asp-route-id="@item.IdLivro">Deleta</a>
                         </td>
                     </tr>
                 }

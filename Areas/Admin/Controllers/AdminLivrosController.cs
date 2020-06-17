@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +6,6 @@ using projeto_livraria.Models;
 using System.Linq;
 using System.Threading.Tasks;
 using ReflectionIT.Mvc.Paging;
-// using projeto_livraria.Context;
 
 namespace projeto_livraria.Area.Admin.Controllers
 {
@@ -20,13 +18,6 @@ namespace projeto_livraria.Area.Admin.Controllers
         {
             _context = context;
         }
-
-        // GET: Admin/AdminLivros
-        // public async Task<IActionResult> Index()
-        // {
-        //     var appDbContext = _context.Livro;
-        //     return View(await appDbContext.ToListAsync());
-        // }
 
         [Route("Admin/AdminLivros/Index")]
         public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Titulo")
@@ -45,7 +36,7 @@ namespace projeto_livraria.Area.Admin.Controllers
             return View(model);
         }
 
-        // GET: Admin/AdminLivros/Details/5
+        [Route("Admin/AdminLivros/Details/5")]
         [HttpGet]
         public async Task<IActionResult> Details(int? id)
         {
@@ -64,7 +55,7 @@ namespace projeto_livraria.Area.Admin.Controllers
             return View(livro);
         }
 
-        //POST: Admin/AdminLivros/Create
+        [Route("Admin/AdminLivros/Create")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdLivro,Titulo,Autor,Editora,Descricao,Ano,Numero_de_Paginas,Acabamento,Idioma,Pais,Altura,Largura,Peso,Preco")] Livro livro)

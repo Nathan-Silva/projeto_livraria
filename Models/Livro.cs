@@ -20,5 +20,6 @@ namespace projeto_livraria.Models
         public System.Decimal Largura {get; set; }
         public System.Decimal Peso {get; set; }
         public System.Decimal Preco { get; set; }
+        public string Imagem {get; set; }
     }
 }
