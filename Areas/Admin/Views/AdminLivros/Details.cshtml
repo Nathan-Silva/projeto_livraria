@@ -4,24 +4,35 @@
 }
 <h3>Detalhes</h3>
 <div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(model => model.Titulo)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Autor)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(model => model.Editora)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(model => model.Ano)
-        </dt>
-    </dl>
+    <form asp-action="Details" role="form">
+        <hr />
+        <dl class="row">
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(model => model.Editora)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Editora)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+             <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Ano)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+             <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+        </dl>
+    </form>    
 </div>
 <hr />
 <div>

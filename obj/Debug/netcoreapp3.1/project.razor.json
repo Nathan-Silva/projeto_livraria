@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\AppWeb.csproj",
+  "FilePath": "c:\\projeto_livraria\\AppWeb.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20595,138 +20595,138 @@
   "RootNamespace": "AppWeb",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\CarrinhoCompra\\Index.cshtml",
-      "TargetPath": "Views\\CarrinhoCompra\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
-      "TargetPath": "Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Venda\\Formulario.cshtml",
-      "TargetPath": "Views\\Venda\\Formulario.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Livros\\List.cshtml",
-      "TargetPath": "Views\\Livros\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Livros\\Details.cshtml",
-      "TargetPath": "Views\\Livros\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Account\\Logout.cshtml",
-      "TargetPath": "Views\\Account\\Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Delete.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Details.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Details.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\LivroResumo.cshtml",
-      "TargetPath": "Views\\Shared\\LivroResumo.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Views\\Livros\\List.cshtml",
+      "TargetPath": "Views\\Livros\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Account\\Register.cshtml",
-      "TargetPath": "Views\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Account\\Login.cshtml",
-      "TargetPath": "Views\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Home\\List.cshtml",
-      "TargetPath": "Views\\Home\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Venda\\FormularioCompleto.cshtml",
-      "TargetPath": "Views\\Venda\\FormularioCompleto.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\_VirewImports.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_VirewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\Admin\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Livros\\Details.cshtml",
+      "TargetPath": "Views\\Livros\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Venda\\Formulario.cshtml",
+      "TargetPath": "Views\\Venda\\Formulario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Venda\\FormularioCompleto.cshtml",
+      "TargetPath": "Views\\Venda\\FormularioCompleto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\italo\\Projetos\\projeto_livraria\\Areas\\Admin\\Views\\_VirewImports.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\_VirewImports.cshtml",
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Account\\Logout.cshtml",
+      "TargetPath": "Views\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\LivroResumo.cshtml",
+      "TargetPath": "Views\\Shared\\LivroResumo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Delete.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Home\\List.cshtml",
+      "TargetPath": "Views\\Home\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Views\\CarrinhoCompra\\Index.cshtml",
+      "TargetPath": "Views\\CarrinhoCompra\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

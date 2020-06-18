@@ -3,83 +3,85 @@
 @{
     ViewData["Title"] = "Delete";
 }
-<h3>Deseja Deletar este Livro ?</h3>
+<h3>Deseja Deletar este Livro?</h3>
 <div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Titulo)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Titulo)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Autor)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Autor)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Descricao)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(Model => Model.Descricao)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@model => @Model.Ano)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Ano)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Numero_de_Paginas)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Numero_de_Paginas)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Acabamento)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Acabamento)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Idioma)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Idioma)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Pais)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Pais)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Altura)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Altura)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Largura)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Largura)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Peso)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Peso)
-        </dd>
-        <dt class = "col-sm-3">
-            @Html.DisplayNameFor(@Model => @Model.Preco)
-        </dt>
-        <dd class = "col-sm-9">
-            @Html.DisplayFor(model => model.Preco)
-        </dd>
-    </dl>
+    <form asp-action="Delete" role="form">
+    
+        <dl class="row">
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Titulo)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Autor)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Descricao)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(Model => Model.Descricao)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@model => @Model.Ano)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Ano)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Numero_de_Paginas)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Numero_de_Paginas)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Acabamento)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Acabamento)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Idioma)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Idioma)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Pais)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Pais)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Altura)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Altura)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Largura)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Largura)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Peso)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Peso)
+            </dd>
+            <dt class = "col-sm-3">
+                @Html.DisplayNameFor(@Model => @Model.Preco)
+            </dt>
+            <dd class = "col-sm-9">
+                @Html.DisplayFor(model => model.Preco)
+            </dd>
+        </dl>
+    </form>    
     <hr />
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdLivro" />

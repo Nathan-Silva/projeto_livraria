@@ -19,7 +19,6 @@ namespace projeto_livraria.Area.Admin.Controllers
             _context = context;
         }
 
-        [Route("Admin/AdminLivros/Index")]
         public async Task<IActionResult> Index(string filter, int pageindex = 1, string sort = "Titulo")
         {
             var resultado = _context.Livro.AsQueryable();
@@ -36,8 +35,12 @@ namespace projeto_livraria.Area.Admin.Controllers
             return View(model);
         }
 
-        [Route("Admin/AdminLivros/Details/5")]
         [HttpGet]
+        [Route("Admin/AdminLivros/Details")]
+        public IActionResult Details()
+            {
+                return View();
+            }
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -55,9 +58,12 @@ namespace projeto_livraria.Area.Admin.Controllers
             return View(livro);
         }
 
-        [Route("Admin/AdminLivros/Create")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public IActionResult Create()
+            {
+                return View();
+            }
         public async Task<IActionResult> Create([Bind("IdLivro,Titulo,Autor,Editora,Descricao,Ano,Numero_de_Paginas,Acabamento,Idioma,Pais,Altura,Largura,Peso,Preco")] Livro livro)
         {
             if (ModelState.IsValid)
@@ -69,6 +75,7 @@ namespace projeto_livraria.Area.Admin.Controllers
             return View(livro);
         }
         [HttpPut]
+
         // GET: Admin/AdminLivros/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -86,9 +93,7 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // POST: Admin/AdminLivros/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPut]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdLivro,Titulo,Autor,Editora,Descricao,Ano,Numero_de_Paginas,Acabamento,Idioma,Pais,Altura,Largura,Peso,Preco")] Livro livro)
         {
@@ -122,6 +127,10 @@ namespace projeto_livraria.Area.Admin.Controllers
 
         // GET: Admin/AdminLivros/Delete/5
         [HttpDelete]
+        public IActionResult Delete()
+            {
+                return View();
+            }
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
