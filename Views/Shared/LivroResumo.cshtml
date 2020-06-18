@@ -3,9 +3,16 @@
     ViewData["Title"] = "Home Page";
 }
 <div>            
-    <article class="card p-2 m-3 width-cards col-3 col-md-3 border-primary rounded">                
-        <img src="~/images/imagens-livros/harry-potter1.webp" class="card-img-top posicao-imagem-card"
-            alt="...">
+    <article class="card p-2 m-3 width-cards col-3 col-md-3 border-primary rounded">
+        @if (@Model.Imagem != null)
+        {
+           <td>
+                 @{
+                     var imgSrc = String.Format("data:image/jpeg;base64,{0}", @Model.Imagem);
+                  }
+                 <img src='@imgSrc' class="card-img-top posicao-imagem-card" />
+            </td>
+        }
         <div class="card-body">
         <h5>
             <a asp-asp-controller="Titulo" asp-action="Details" asp-route-Idlivro="@Model.IdLivro">"@Model.Titulo"</a>
@@ -20,4 +27,5 @@
             </p>        
         </div>
     </article>                                           
-</div>        
+</div> 
+      
