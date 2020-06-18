@@ -83,9 +83,9 @@
         </dl>
     </form>    
     <hr />
-    <form asp-action="Delete">
+    <form asp-action="/AdminLivros/Delete">
         <input type="hidden" asp-for="IdLivro" />
-        <input type="submit" value="Deletar" class="btn btn-danger" /> |
-        <a asp-action="Index" class="btn btn-outline-info">Retornar</a>
+        <input class="btn btn-danger" type="submit" value="Deletar" /> |
+        <a asp-action="Index" href="https://localhost:5001/Admin/AdminLivros" class="btn btn-outline-info">Retornar</a>
     </form>
 </div>

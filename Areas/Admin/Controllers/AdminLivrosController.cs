@@ -60,6 +60,7 @@ namespace projeto_livraria.Area.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Admin/AdminLivros/Create")]
         public IActionResult Create()
             {
                 return View();
@@ -77,6 +78,11 @@ namespace projeto_livraria.Area.Admin.Controllers
         [HttpPut]
 
         // GET: Admin/AdminLivros/Edit/5
+        [Route("Admin/AdminLivros/Edit")]
+        public IActionResult Edit()
+            {
+                return View();
+            }
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -126,7 +132,8 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // GET: Admin/AdminLivros/Delete/5
-        [HttpDelete]
+        [HttpGet]
+        [Route("Admin/AdminLivros/Delete")]
         public IActionResult Delete()
             {
                 return View();
@@ -149,8 +156,9 @@ namespace projeto_livraria.Area.Admin.Controllers
         }
 
         // POST: Admin/AdminLivros/Delete/5
-        [HttpDelete]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("Admin/AdminLivros/DeleteConfirmed")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var livro = await _context.Livro.FindAsync(id);

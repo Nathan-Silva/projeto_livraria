@@ -19,7 +19,7 @@ Total de Livros : @Model.TotalRecordCount
     <vc:pager paging-list="@Model"></vc:pager>
 </div>
 <p>
-    <a class="btn btn-outline" asp-action="Create">Adicionar novo Livro</a>
+    <a href="https://localhost:5001/Admin/AdminLivros/Create" class="btn btn-outline" asp-action="Create">Adicionar novo Livro</a>
 </p>
 <div class="row">
     <div class="col-md-10">
@@ -65,9 +65,9 @@ Total de Livros : @Model.TotalRecordCount
                             @Html.DisplayFor(modelItem => item.Ano)
                         </td>
                         <td>
-                            <a asp-action="Edit" href="/Admin/AdminLivros/Create" asp-route-id="@item.IdLivro">Edita</a> |
+                            <a asp-action="Edit" href="/Admin/AdminLivros/Edit/5" asp-route-id="@item.IdLivro">Edita</a> |
                             <a asp-action="Details" href="/Admin/AdminLivros/Details/5" asp-route-id="@item.IdLivro">Detalhes</a> |
-                            <a asp-action="Delete" href="/Admin/AdminLivros/Delete" asp-route-id="@item.IdLivro">Deleta</a>
+                            <a asp-action="Delete" href="/Admin/AdminLivros/Delete/5" asp-route-id="@item.IdLivro">Deleta</a>
                         </td>
                     </tr>
                 }

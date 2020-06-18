@@ -20645,11 +20645,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Edith.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\projeto_livraria\\Views\\Venda\\Formulario.cshtml",
       "TargetPath": "Views\\Venda\\Formulario.cshtml",
       "FileKind": "mvc"
@@ -20727,6 +20722,11 @@
     {
       "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\projeto_livraria\\Areas\\Admin\\Views\\AdminLivros\\Edit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\AdminLivros\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],
