@@ -1,69 +1,71 @@
 @model projeto_livraria.Models.Venda
 
-<div class="row orderForm">
+<div class="">
 
-    <h3 class="text-center"> Você esta prestes a completar sua compra! <span class="glyphicon glyphicon-ok"></span></h3>
 
-    <form asp-action="Formulario" method="Post" class="form-horizontal">
+    <h3 class="text-center mt-5 mb-5"> Você esta prestes a completar sua compra! <span class="glyphicon glyphicon-ok"></span></h3>
 
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Nome" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Nome" class="form-control"/>
+    <form asp-action="Formulario" method="Post" class="form-aligni">
+
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Nome" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Nome" class="form-control" placeholder="Entre com o nome"/>
                 <span asp-validation-for="@Model.IdCliente.Nome" class="text-danger"></span>
             </div>    
         </div>
         
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.CPF" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.CPF" class="form-control"/>
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.CPF" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.CPF" class="form-control" placeholder="Entre com o CPF"/>
                 <span asp-validation-for="@Model.IdCliente.CPF" class="text-danger"></span>
             </div>
         </div>
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Telefone" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Telefone" class="form-control"/>
+
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Telefone" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Telefone" class="form-control" placeholder="Entre com o telefone"/>
                 <span asp-validation-for="@Model.IdCliente.Telefone" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Endereco.Rua" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Endereco.Rua" class="form-control"/>
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Endereco.Rua" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Endereco.Rua" class="form-control" placeholder="Digite a Rua"/>
                 <span asp-validation-for="@Model.IdCliente.Endereco.Rua" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Endereco.Bairro" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Endereco.Bairro" class="form-control"/>
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Endereco.Bairro" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Endereco.Bairro" class="form-control" placeholder="Digite o bairro"/>
                 <span asp-validation-for="@Model.IdCliente.Endereco.Bairro" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Endereco.Cidade" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Endereco.Cidade" class="form-control"/>
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Endereco.Cidade" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Endereco.Cidade" class="form-control" placeholder="Digite a Cidade"/>
                 <span asp-validation-for="@Model.IdCliente.Endereco.Cidade" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label asp-for="@Model.IdCliente.Endereco.Estado" class="col-md-2 control-label"></label>
-            <div class="col-md-5">
-                <input asp-for="@Model.IdCliente.Endereco.Estado" class="form-control"/>
+        <div class="form-group row align-items-center mx-auto">
+            <label asp-for="@Model.IdCliente.Endereco.Estado" class="col-md-1 control-label"></label>
+            <div class="input-size">
+                <input asp-for="@Model.IdCliente.Endereco.Estado" class="form-control" placeholder="Digite o estado"/>
                 <span asp-validation-for="@Model.IdCliente.Endereco" class="text-danger"></span>
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-5">
             <div class="btn-group col-md-offset-2 col-md-8">
-                <input class="btn btn-success" type="submit" value="Concluir Compra"/>
+                <input class="btn btn-primary" type="submit" value="Concluir Compra"/>
             </div>
         </div>    
     </form>

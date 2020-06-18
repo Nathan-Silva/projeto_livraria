@@ -12,12 +12,22 @@
 <body>      
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand font-titulo tamanho-titulo" asp-area="" asp-controller="Home" asp-action="Index">Biblioteca</a>
+            <div class="col container ml-0 mr-0">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="img-logo rounded" src="~/images/Layout/logo2.jpeg">
+                </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                
+                <form class="navbar-form custom navbar-right ml-5" asp-controller="Livros" asp-action="Busca" method="get">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-size mt-3 mb-0" placeholder="Procurar Livro" name="buscaString" value="@ViewData["buscaString"]">
+                    </div>
+                </form>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <ul class="navbar-nav">
@@ -28,13 +38,8 @@
                                 data-target="#modal-fale-conosco">Fale conosco</a></li>
                         <li class=" icon-carrinho">@await Component.InvokeAsync("CarrinhoCompraResumo")</li>
                     </ul>
-                    @await Html.PartialAsync("_LoginPartial")
-                    <form class="navbar-form navbar-right" asp-controller="Livros" asp-action="Busca" method="get">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Procurar Livro" name="buscaString" value="@ViewData["buscaString"]">
-                        </div>
-                    </form>
                 </div>
+                @await Html.PartialAsync("_LoginPartial")
             </div>
         </nav>
     </header>
