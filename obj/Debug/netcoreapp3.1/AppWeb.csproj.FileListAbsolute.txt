@@ -281,13 +281,6 @@ C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.csh
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Admin\Index.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_VirewImports.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Create.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Delete.cshtml.g.cs
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Index.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\AppWeb.MvcApplicationPartsAssemblyInfo.cs
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -324,7 +317,6 @@ C:\projeto_livraria\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.res
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\projeto_livraria\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Details.cshtml.g.cs
 C:\Users\italo\Projetos\projeto_livraria\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\italo\Projetos\projeto_livraria\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\italo\Projetos\projeto_livraria\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -459,4 +451,12 @@ C:\Users\italo\Projetos\projeto_livraria\obj\Debug\netcoreapp3.1\staticwebassets
 C:\Users\italo\Projetos\projeto_livraria\obj\Debug\netcoreapp3.1\AppWeb.dll
 C:\Users\italo\Projetos\projeto_livraria\obj\Debug\netcoreapp3.1\AppWeb.pdb
 C:\Users\italo\Projetos\projeto_livraria\obj\Debug\netcoreapp3.1\AppWeb.genruntimeconfig.cache
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Create.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Delete.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Details.cshtml.g.cs
 C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Edit.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminLivros\Index.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Admin\Index.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\projeto_livraria\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_VirewImports.cshtml.g.cs

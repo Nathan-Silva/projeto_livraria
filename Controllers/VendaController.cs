@@ -52,7 +52,7 @@ namespace projeto_livraria.Controllers
             [Route("Venda/FormularioCompleto")]
             public IActionResult FormularioCompleto()
             {
-                ViewBag.FormularioCompletoMensagem = "Obrigado pela sua compra";
+                ViewBag.FormularioCompletoMensagem = "Obrigado pela sua compra!";
                 return View();
             }
     }
